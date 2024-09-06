@@ -29,7 +29,9 @@ const Projects = () => {
       <h1 className="text-6xl m-6">Projects</h1>
       {loading ? (
         <div className="flex gap-4">
-          <p className="text-center text-xl text-gray-500 animate-pulse">Loading...</p>
+          <p className="text-center text-xl text-gray-500 animate-pulse">
+            Loading...
+          </p>
         </div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -47,13 +49,16 @@ const ProjectCard = ({ project }: { project: any }) => (
     <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
     <p className="text-gray-700 mb-4">{project.description}</p>
     {project.imageUrl && (
-      <Image
-        src={project.imageUrl}
-        alt={project.title}
-        width={560}
-        height={315}
-        className="rounded-lg"
-      />
+      
+      <a href={project.link || '#'}>
+        <Image
+          src={project.imageUrl}
+          alt={project.title}
+          width={560}
+          height={315}
+          className="rounded-lg"
+        />
+      </a>
     )}
     {project.videoUrl && (
       <iframe

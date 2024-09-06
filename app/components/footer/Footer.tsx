@@ -13,9 +13,9 @@ const Footer = () => {
         >
           <FooterList>
             <h3 className="text-base font-bold">Email</h3>
-            <Link href="mailto:as9804@berkeley.edu">
+            <a href="mailto:as9804@berkeley.edu">
               <p>as9804@berkeley.edu</p>
-            </Link>
+            </a>
           </FooterList>
           <div
             className="w-full  md:w-1/3 mb-6 
@@ -42,12 +42,12 @@ const Footer = () => {
                   size={24}
                 />
               </Link>
-              <Link href="mailto:as9804@berkeley.edu">
+              <a href="mailto:as9804@berkeley.edu">
                 <FaEnvelope
                   className="hover:text-slate-400 cursor-pointer"
                   size={24}
                 />
-              </Link>
+              </a>
             </div>
           </FooterList>
         </div>
