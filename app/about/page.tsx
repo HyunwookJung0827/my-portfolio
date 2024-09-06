@@ -7,8 +7,11 @@ const About = () => {
       <div className="flex-grow grid grid-cols-[1fr,2fr] p-12 items-center justify-center">
         <div className="grid grid-cols-1">
           <h1 className="text-6xl">About Me</h1>
-          <p className="text-2xl py-12">
-            Junior Software Engineer specializing in Python and JavaScript.
+          <p className="text-lg py-12">
+            I am a highly motivated and results-oriented individual with a
+            strong work ethic. I am also a quick learner and I am eager to take
+            on new challenges. I am a team player and I am always willing to
+            help others.
           </p>
         </div>
         <div>

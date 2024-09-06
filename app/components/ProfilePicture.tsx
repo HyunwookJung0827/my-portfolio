@@ -10,7 +10,7 @@ const ProfilePicture = () => {
         layout="responsive"
         width={300}
         height={300}
-        className="object-contain"
+        className="rounded-lg"
       />
     </div>
   );
