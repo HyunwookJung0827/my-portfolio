@@ -11,7 +11,7 @@ const Projects = () => {
       try {
         const response = await fetch("/api/projects");
         const data = await response.json();
-        console.log("Fetched projects:", data); // Log the fetched data
+        // console.log("Fetched projects:", data); // Log the fetched data
         setProjects(data);
       } catch (error) {
         console.error("Error fetching projects:", error);
@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <Container>
       <h1 className="text-6xl m-6">Projects</h1>
-      <div className="grid grid-cols-3 md:grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {projects.map((project) => (
           <ProjectCard key={project._id} project={project} />
         ))}
@@ -37,7 +37,14 @@ const ProjectCard = ({ project }: { project: any }) => (
   <div className="project-card">
     <h3>{project.title}</h3>
     <p>{project.description}</p>
-    {project.imageUrl && <Image src={project.imageUrl} alt={project.title} width={560} height={315}/>}
+    {project.imageUrl && (
+      <Image
+        src={project.imageUrl}
+        alt={project.title}
+        width={560}
+        height={315}
+      />
+    )}
     {project.videoUrl && (
       <iframe
         width="560"

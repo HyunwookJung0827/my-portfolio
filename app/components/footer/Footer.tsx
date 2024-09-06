@@ -5,7 +5,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-700 text-slate-200 text-sm fixed bottom-0 w-full">
+    <footer className="bg-slate-700 text-slate-200 text-sm w-full">
       <Container>
         <div
           className="flex flex-col md:flex-row
