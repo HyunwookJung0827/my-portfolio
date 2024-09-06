@@ -3,7 +3,7 @@ import Container from "./components/Container";
 const HomePage = () => {
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center min-h-[80vh] text-center">
+      <div className="flex flex-col items-center justify-center min-h-[70vh] text-center">
         <h1 className="text-6xl font-bold mb-4 text-gray-800">Hi! I&apos;m Hyunwook Jung</h1>
         <h2 className="text-2xl text-gray-600">
           Junior Software Engineer specializing in{" "}
