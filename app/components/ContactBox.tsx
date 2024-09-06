@@ -22,7 +22,7 @@ const ContactBox = () => {
       <p className="text-2xl">as9804@berkeley.edu</p>
       {showManualEmailMessage && (
         <p className="text-yellow-500 mt-4">
-          If the link isn't working, please manually send an email to
+          If the link isn&apos;t working, please manually send an email to
           as9804@berkeley.edu.
         </p>
       )}
