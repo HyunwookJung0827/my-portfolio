@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import NavBar from "./components/nav/NavBar";
 import Footer from "./components/footer/Footer";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -33,6 +34,7 @@ export default async function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />{" "}
         </div>
+        <Analytics />
       </body>
     </html>
   );
