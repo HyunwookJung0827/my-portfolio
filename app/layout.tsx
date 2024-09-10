@@ -4,13 +4,14 @@ import { Poppins } from "next/font/google";
 import NavBar from "./components/nav/NavBar";
 import Footer from "./components/footer/Footer";
 import { Toaster } from "react-hot-toast";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
-  title: "Hyunwook Jung's Portfolio",
-  description: "Hyunwook Jung's Portfolio",
+  title: "Hyunwook Jung | Software Engineer Portfolio",
+  description:
+    "Explore the portfolio of Hyunwook Jung, a software engineer specializing in Python, JavaScript, and building efficient, scalable web applications. Discover projects, skills, and more.",
 };
 
 export default async function RootLayout({
