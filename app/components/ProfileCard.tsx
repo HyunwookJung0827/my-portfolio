@@ -7,7 +7,7 @@ const ProfileCard = () => {
     <Container>
       <div className="flex flex-col items-center">
         <ProfilePicture />
-        <Signature />
+        {/* <Signature /> */}
         <h2 className="text-2xl text-black font-semibold font-serif">
           Hyunwook Jung
         </h2>
