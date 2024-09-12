@@ -1,6 +1,5 @@
 import Container from "./Container";
 import ProfilePicture from "./ProfilePicture";
-import Signature from "./Signature";
 
 const ProfileCard = () => {
   return (
@@ -8,7 +7,7 @@ const ProfileCard = () => {
       <div className="flex flex-col items-center">
         <ProfilePicture />
         {/* <Signature /> */}
-        <h2 className="text-2xl text-black font-semibold font-serif">
+        <h2 className="hidden md:flex text-2xl text-white font-semibold font-serif">
           Hyunwook Jung
         </h2>
       </div>

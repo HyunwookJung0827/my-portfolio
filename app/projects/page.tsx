@@ -7,6 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 const Projects = () => {
   const [projects, setProjects] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [fontSize, setFontSize] = useState('3.75em');
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -28,15 +29,15 @@ const Projects = () => {
   return (
     <ParticlesBackground>
       <div className="absolute inset-0 flex flex-col items-center text-white z-10">
-        <h1 className="m-6">
+        <h1 className="mt-12 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
         <TypeAnimation
           sequence={[
             `Projects`,
-            999999,
+            99999999,
             "",
           ]}
           speed={50}
-          style={{ whiteSpace: "pre-line", fontSize: "3.75em" }}
+          style={{ whiteSpace: "pre-line"}}
         /></h1>
         {loading ? (
           <div className="flex gap-4">
@@ -69,7 +70,7 @@ const ProjectCard = ({ project }: { project: any }) => (
           alt={project.title}
           width={560}
           height={315}
-          className="rounded-lg"
+          className="rounded-lg max-w-full" 
         />
       </a>
     )}
@@ -81,7 +82,7 @@ const ProjectCard = ({ project }: { project: any }) => (
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="rounded-lg"
+        className="rounded-lg max-w-full"
       ></iframe>
     )}
     {project.link && (
@@ -89,7 +90,7 @@ const ProjectCard = ({ project }: { project: any }) => (
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block bg-blue-500 text-white text-lg font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 my-2"
+        className="inline-block bg-blue-500 text-white text-sm lg:text-lg font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 my-2"
       >
         View Project
       </a>

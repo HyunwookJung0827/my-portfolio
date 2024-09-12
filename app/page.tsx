@@ -16,7 +16,7 @@ const HomePage = () => {
       </div> */}
       <ParticlesBackground>
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-          <h1 className="text-6xl font-bold mb-4 text-white">Hyunwook Jung</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-4 text-white text-center">Hyunwook Jung</h1>
           <nav className="flex space-x-4">
             <Link href="/" className="text-white text-lg hover:underline">
               Home
@@ -37,7 +37,7 @@ const HomePage = () => {
               Contact
             </Link>
           </nav>
-          <h2 className="text-2xl text-gray-300 mt-4">
+          <h2 className="text-lg lg:text-2xl text-gray-300 mt-4 mx-2 text-center">
             Junior Software Engineer specializing in{" "}
             <span className="text-blue-400 font-semibold">Python</span> and{" "}
             <span className="text-yellow-400 font-semibold">
